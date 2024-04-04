@@ -29,7 +29,7 @@ const AllLinksQuery = gql`
 
 export default function LinksTable() {
   const { data, loading, error, fetchMore } = useQuery(AllLinksQuery, {
-    variables: { first: 1 }
+    variables: { first: 2 }
   })
 
   if (loading) return <p>Loading...</p>
